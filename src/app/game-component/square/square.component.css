@@ -1,0 +1,26 @@
+.game-square {
+    height: 100%;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+}
+
+p {
+    display: inline;
+    margin: 0px;
+    font-size: 12rem;
+    overflow: hidden;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+}
+
+.noClick {
+    pointer-events: none;
+}
+
+
+
+div:hover {
+    border: 6px solid rgb(97, 255, 255);
+}
