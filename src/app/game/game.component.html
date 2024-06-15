@@ -15,13 +15,13 @@
             *ngIf="!gameService.winner"
             [ngClass]="{'text-teal-300' : gameService.activePlayer == 'O'}"
         >
-            Turno do hogador {{gameService.activePlayer}}
+            It is {{gameService.activePlayer}}'s turn
         </h1>
 
         <h1 class="text-center text-red-500 mt-10 text-4xl font-semibold"
             *ngIf="gameService.winner"
         >
-            赢 {{gameService.activePlayer}} venceu 赢
+            赢 {{gameService.activePlayer}} won! 赢
         </h1>
 
         <!-- <button 
