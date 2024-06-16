@@ -2,7 +2,9 @@
     <source src="../../assets/backgroundAnimation.mp4" type="video/mp4">
 </video>
 
-
+<audio #backgroundAudio autoplay loop>
+    <source src="../../assets/Green Hill Zone.mp3" type="audio/mpeg">
+</audio>
 
 <div >
     <div class="header content-center">
@@ -10,10 +12,10 @@
             Tic - Tac - Toe
         </h1>
 
-        <h1 class="text-center text-white text-4xl font-bold"
+        <h1 class="text-center text-white text-4xl"
             *ngIf="!gameService.winner"
             [ngClass]="{'text-teal-300' : gameService.activePlayer == 'O'}">
-            X'points: {{gameService.gamePoints["X"]}}   |   O'points: {{gameService.gamePoints["O"]}}
+            X's points: {{gameService.gamePoints["X"]}}   |   O's points: {{gameService.gamePoints["O"]}}
         </h1>
 
         <h1 class="text-center text-orange-600 text-4xl font-bold"
@@ -34,6 +36,14 @@
     </div>
 
     <app-board></app-board>
+
+    <div class="header content-center">
+        <a *ngIf="gameService.pvpMode"
+        (click)="gameService.ChangeGameMode()">Player Vs Player</a>
+    
+        <a *ngIf="!gameService.pvpMode"
+        (click)="gameService.ChangeGameMode()">Player Vs Bot</a>
+    </div>
 
 </div>
 
