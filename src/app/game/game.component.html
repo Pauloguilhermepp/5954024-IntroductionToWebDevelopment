@@ -9,14 +9,20 @@
         <h1 class="game-title">
             Tic - Tac - Toe
         </h1>
-        <h1 class="text-center text-orange-600 text-4xl mt-10 font-bold"
+
+        <h1 class="text-center text-white text-4xl font-bold"
             *ngIf="!gameService.winner"
-            [ngClass]="{'text-teal-300' : gameService.activePlayer == 'O'}"
-        >
+            [ngClass]="{'text-teal-300' : gameService.activePlayer == 'O'}">
+            X'points: {{gameService.gamePoints["X"]}}   |   O'points: {{gameService.gamePoints["O"]}}
+        </h1>
+
+        <h1 class="text-center text-orange-600 text-4xl font-bold"
+            *ngIf="!gameService.winner"
+            [ngClass]="{'text-teal-300' : gameService.activePlayer == 'O'}">
             It is {{gameService.activePlayer}}'s turn
         </h1>
 
-        <h1 class="text-center text-red-500 mt-10 text-4xl font-semibold"
+        <h1 class="text-center text-red-500 text-4xl font-semibold"
             *ngIf="gameService.winner"
         >
             赢 {{gameService.activePlayer}} won! 赢

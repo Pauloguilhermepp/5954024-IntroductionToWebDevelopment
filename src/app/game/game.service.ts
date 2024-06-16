@@ -12,6 +12,7 @@ export class GameService {
   public isGameRunning: boolean = false;
   public isGameOver: boolean = false;
   public winner: boolean = false;
+  public gamePoints: { [key: string]: number } = {X: 0, O: 0};
 
   constructor() {
     this.NewGame();
@@ -22,6 +23,7 @@ export class GameService {
     this.turnCount = 0;
     this.isGameRunning = false;
     this.isGameOver = false;
+    this.winner = false;
     this.board = this.CreateBoard();
   }
 
@@ -60,6 +62,7 @@ export class GameService {
     if (this.isWinner) {
       this.winner = true;
       this.isGameOver = true;
+      this.gamePoints[this.activePlayer]++;
     }
   }
 
