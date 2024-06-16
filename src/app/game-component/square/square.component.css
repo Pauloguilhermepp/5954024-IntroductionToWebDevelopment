@@ -19,8 +19,6 @@ p {
     pointer-events: none;
 }
 
-
-
 div:hover {
     border: 6px solid rgb(97, 255, 255);
 }

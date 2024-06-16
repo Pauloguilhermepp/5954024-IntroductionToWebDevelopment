@@ -22,7 +22,7 @@ export class SquareComponent implements OnInit {
 
     if (this.gameService.isGameRunning && this.square.state === null) {
       this.square.state = this.gameService.activePlayer;
-      this.gameService.ChangePlayerTurn(this.square);  // <---- 
+      this.gameService.ChangePlayerTurn(this.square);
 
       console.log(this.square)
     }

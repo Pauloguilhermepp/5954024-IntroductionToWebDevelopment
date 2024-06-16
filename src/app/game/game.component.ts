@@ -13,7 +13,6 @@ export class GameComponent {
   }
 
   ResetGame() {
-    //this.gameService.NewGame();
     window.location.reload();
   }
 
