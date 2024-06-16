@@ -6,14 +6,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     object-fit: cover;
 }
 
 /* text-center text-6xl text-teal-400 font-extraboard */
 .game-title {
     text-align: center;
-    font-size: 90px;
+    font-size: 60px;
     -webkit-text-stroke: 2px rgb(255,255,255);
     color: transparent;
     font-family: "Tiny5", sans-serif;

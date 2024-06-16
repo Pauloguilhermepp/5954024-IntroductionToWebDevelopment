@@ -4,12 +4,12 @@ section {
     justify-content: space-evenly;
     align-content: space-between;
     align-items: center;
-    margin: 3% auto 50px auto;
+    margin: 1% auto 50px auto;
     flex-wrap: wrap;
 }
 
 .square-container {
     flex: 0 0 32%;
-    margin-top: 6px;
+    margin-top: 3px;
 }
 
