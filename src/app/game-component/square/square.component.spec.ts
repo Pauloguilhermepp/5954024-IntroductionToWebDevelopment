@@ -10,8 +10,8 @@ describe('SquareComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [SquareComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(SquareComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

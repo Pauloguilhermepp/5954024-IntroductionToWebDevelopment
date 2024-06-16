@@ -8,7 +8,7 @@ import { GameService } from '../../game/game.service';
 })
 export class BoardComponent implements OnInit {
 
-  constructor(public gameService: GameService) {}
+  constructor(public gameService: GameService) { }
 
   ngOnInit(): void {
   }

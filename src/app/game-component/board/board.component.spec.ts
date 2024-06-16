@@ -10,8 +10,8 @@ describe('BoardComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [BoardComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(BoardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

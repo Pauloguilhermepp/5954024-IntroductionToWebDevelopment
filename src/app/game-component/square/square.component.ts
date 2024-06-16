@@ -6,11 +6,11 @@ import { GameService } from '../../game/game.service';
   templateUrl: './square.component.html',
   styleUrl: './square.component.css'
 })
-export class SquareComponent implements OnInit{
+export class SquareComponent implements OnInit {
 
   @Input() square: any;
 
-  constructor(public gameService: GameService) {}
+  constructor(public gameService: GameService) { }
 
   ngOnInit(): void {
   }
