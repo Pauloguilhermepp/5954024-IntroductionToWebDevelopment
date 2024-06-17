@@ -12,7 +12,7 @@ export class GameService {
   public isGameRunning: boolean = false;
   public isGameOver: boolean = false;
   public winner: boolean = false;
-  public gamePoints: { [key: string]: number } = {X: 0, O: 0};
+  public gamePoints: { [key: string]: number } = { X: 0, O: 0 };
   public pvpMode: boolean = true;
 
   constructor() {
@@ -58,17 +58,17 @@ export class GameService {
     this.CheckBotMovement();
   }
 
-  ChangeGameMode(){
+  ChangeGameMode() {
     this.NewGame();
     this.pvpMode = !this.pvpMode;
-    this.gamePoints = {X: 0, O: 0};
+    this.gamePoints = { X: 0, O: 0 };
   }
 
-  CheckBotMovement(){
-    if (this.pvpMode || this.activePlayer === "X"){
+  CheckBotMovement() {
+    if (this.pvpMode || this.activePlayer === "X") {
       return;
     }
-    
+
     this.MakeBotMovement();
 
     if (!this.isGameOver) {
@@ -79,7 +79,7 @@ export class GameService {
     this.isGameOver = this.isGameOver ? true : false;
   }
 
-  MakeBotMovement(){
+  MakeBotMovement() {
     let bestScore = -Infinity;
     let move = -1;
 
