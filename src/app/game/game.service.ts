@@ -64,6 +64,8 @@ export class GameService {
     this.gamePoints = { X: 0, O: 0 };
   }
 
+
+  // https://www.inf.ufrgs.br/~engel/data/media/file/inf01048/jogos.pdf
   CheckBotMovement() {
     if (this.pvpMode || this.activePlayer === "X") {
       return;

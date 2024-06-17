@@ -19,6 +19,18 @@ p {
     pointer-events: none;
 }
 
-div:hover {
+.player-one,
+.player-two {
+    height: 100%;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.player-one:hover {
     border: 6px solid rgb(97, 255, 255);
+}
+
+.player-two:hover {
+    border: 6px solid rgb(234, 88, 12);
 }

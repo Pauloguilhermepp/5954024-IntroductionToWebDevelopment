@@ -28,6 +28,12 @@ a {
     cursor: pointer;
 }
 
+a:hover {
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+}
+
 .content-center {
     text-align: center;
 }

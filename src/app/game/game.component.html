@@ -31,11 +31,12 @@
 
         <h1 class="text-center text-white text-4xl font-semibold"
             *ngIf="gameService.gameOver && !gameService.winner">
-            赢 It is a draw! 赢
+            平 It is a draw! 平
         </h1>
 
         <a *ngIf="gameService.gameOver"
-        (click)="ResetGame()">Restart</a>
+            (click)="ResetGame()">Restart
+        </a>
 
     </div>
 
