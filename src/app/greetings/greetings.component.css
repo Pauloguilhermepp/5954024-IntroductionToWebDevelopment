@@ -57,3 +57,9 @@
     object-fit: cover;
 }
 
+
+.content a:hover {
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+}
